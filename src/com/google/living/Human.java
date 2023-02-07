@@ -1,11 +1,21 @@
 package com.google.living;
 
+import com.google.Automobile;
+
 public class Human {
 // state 
 	private int eyes;
 	private int ears;
 	
 	
+	
+	public static void main(String[] args) {
+		Automobile automobile = new Automobile();
+		automobile.move();
+		Human human = new Human();
+		human.walk();
+		
+	}
 	
 	// behaviour 
 	public void talk() {

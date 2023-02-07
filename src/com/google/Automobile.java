@@ -2,6 +2,8 @@ package com.google;
 
 import java.awt.Color;
 
+import com.google.living.Human;
+
 public class Automobile {
 	
 	//  state 
@@ -11,6 +13,13 @@ public class Automobile {
 	private boolean petrolEngine;
 	
 	// behaviour 
+	public static void main(String[] args) {
+		Automobile automobile = new Automobile();
+		automobile.move();
+		Human human = new Human();
+		human.walk();
+		
+	}
 	
 	public void honk() {
 		System.out.println("Noise pollution ");
