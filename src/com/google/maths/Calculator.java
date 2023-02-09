@@ -57,14 +57,14 @@ public class Calculator {
 	
 	public void calculate3() {
 		switch(operation2) {
+		case MUL:
+			System.out.println(this.numberA*this.numberB);
+			break;
 		case ADD:
 			System.out.println(this.numberA+this.numberB);
 			break;
 		case SUB:
 			System.out.println(this.numberA-this.numberB);
-			break;
-		case MUL:
-			System.out.println(this.numberA*this.numberB);
 			break;
 		case DIV:
 			System.out.println(this.numberA/this.numberB);
