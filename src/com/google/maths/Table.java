@@ -3,13 +3,15 @@ package com.google.maths;
 public class Table {
 	// state 
 	private int number;
+	private int endOfTable;
 	// constructor 
-	public Table(int numb) {
+	public Table(int numb, int end) {
 		this.number = numb;
+		this.endOfTable = end;
 	}
 	// Behavior 
 	public void writeTable() {
-		for(int i = 1; i <= 10; i++) {
+		for(int i = 1; i <= endOfTable; i++) {
 			System.out.println(number * i);
 		}
 	}
@@ -28,7 +30,9 @@ public class Table {
 	// Entry point 
 	public static void main(String[] args) {
 		
-		Table table = new Table(Integer.parseInt(args[0]));
+		int number = Integer.parseInt(args[0]);
+		int endOfTable = Integer.parseInt(args[1]);
+		Table table = new Table(number,endOfTable);
 		table.writeTable();
 	}
 	
