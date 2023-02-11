@@ -1,10 +1,10 @@
 package com.google.staff;
 
-public class Manager extends Employee{
+public class Executive extends Manager{
 
-	public Manager(String name, long id) {
+	public Executive(String name, long id) {
 		super(name, id);
 		// TODO Auto-generated constructor stub
 	}
-	
+
 }

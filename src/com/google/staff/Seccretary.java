@@ -1,10 +1,10 @@
 package com.google.staff;
 
-public class Manager extends Employee{
+public class Seccretary extends Employee{
 
-	public Manager(String name, long id) {
+	public Seccretary(String name, long id) {
 		super(name, id);
 		// TODO Auto-generated constructor stub
 	}
-	
+
 }
